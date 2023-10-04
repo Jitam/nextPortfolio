@@ -8,7 +8,7 @@ const Hireme = () => {
         <CircularText className={"fill-dark animate-spin-slow"} />
         <Link
           href={"mailto:jitender.sridhar@gmail.com"}
-          className="bg-dark text-light shadow-md border-solid border-dark w-20 h-20 rounded-full flex items-center justify-center absolute font-bold hover:bg-light hover:text-light"
+          className="bg-dark text-light shadow-md border-solid border-dark w-20 h-20 rounded-full flex items-center justify-center absolute font-bold hover:bg-light hover:text-dark"
         >
           Hire Me
         </Link>

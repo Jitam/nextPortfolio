@@ -31,7 +31,7 @@ const NavBar = () => {
         <CustomLink href={"/"} title={"Home"} />
         <CustomLink href={"/about"} title={"About"} />
         <CustomLink href={"/projects"} title={"Projects"} />
-        <CustomLink href={"/contact"} title={"Contact"} />
+        <CustomLink href={"/articles"} title={"Articles"} />
       </nav>
       <div className="absolute left-[50%] top-2 translate-x-[-50]">
         <Logo />

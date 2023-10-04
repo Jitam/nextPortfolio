@@ -17,7 +17,7 @@ export default function Home() {
       </Head>
       <main className="flex items-center text-dark w-full min-h-screen">
         <Layout className="pt-0">
-          <div className="flex items-center justify-center w-full">
+          <div className="flex items-center justify-center w-full xs:flex-col-reverse">
             <div className="w-1/2">
               <Image
                 src={profilePic}
