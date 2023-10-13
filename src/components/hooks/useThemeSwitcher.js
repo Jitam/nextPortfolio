@@ -37,12 +37,12 @@ const useThemeSwitcher = () => {
 
   useEffect(() => {
     if (mode === "dark") {
-      console.log("--------------", mode);
       window.localStorage.setItem("theme", "dark");
       document.documentElement.classList.add("dark");
       console.log("set Dark");
-    } else {
-      console.log("+++++++++++", mode);
+    }
+
+    if (mode === "light") {
       window.localStorage.setItem("theme", "light");
       document.documentElement.classList.remove("dark");
     }
