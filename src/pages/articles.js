@@ -12,7 +12,7 @@ const FramerImg = motion(Image);
 
 const FeaturedArticle = ({ title, img, link, time, summary }) => {
   return (
-    <li className="col-span-1 w-full border border-solid border-dark rounded-2xl p-4 bg-light">
+    <li className="col-span-1 w-full border border-solid border-dark rounded-2xl p-4 bg-light dark:bg-dark dark:border-light">
       <Link
         className="w-full cursor-pointer overflow-hidden rounded-lg inline-block"
         href={link}
@@ -27,10 +27,14 @@ const FeaturedArticle = ({ title, img, link, time, summary }) => {
         />
       </Link>
       <Link href={link} target="_blank">
-        <h2 className="font-bold capitalize my-2 mt-4 text-2xl">{title}</h2>
+        <h2 className="font-bold capitalize dark:text-light my-2 mt-4 text-2xl">
+          {title}
+        </h2>
       </Link>
-      <p className="text-sm mb-2">{summary}</p>
-      <span className="text-primary font-semibold">{time}</span>
+      <p className="text-sm dark:text-light mb-2">{summary}</p>
+      <span className="text-primary dark:text-primaryDark font-semibold">
+        {time}
+      </span>
     </li>
   );
 };
@@ -82,10 +86,12 @@ const Article = ({ img, title, date, link }) => {
       whileInView={{ y: 0 }}
       transition={{ duration: 0.5, ease: "easeInOut" }}
       viewport={{ once: true }}
-      className="relative w-full p-4 py-6 my-4 rounded-xl flex items-center justify-between bg-light text-dark border border-solid border-dark border-r-4 border-b-4"
+      className="relative w-full p-4 py-6 my-4 rounded-xl flex items-center justify-between bg-light text-dark border border-solid border-dark border-r-4 border-b-4 dark:bg-dark dark:text-light dark:border-light"
     >
       <HoverableImg title={title} img={img} link={link} />
-      <span className="font-semibold text-primary pl-4">{date}</span>
+      <span className="font-semibold text-primary dark:text-primaryDark pl-4">
+        {date}
+      </span>
     </motion.li>
   );
 };
@@ -124,7 +130,7 @@ Follow this step-by-step guide to integrate Pagination component in your ReactJS
               link={"/"}
             />
           </ul>
-          <h2 className="font-bold text-4xl w-full text-center my-18 mt-32 mb-18">
+          <h2 className="font-bold text-4xl w-full dark:text-light text-center my-18 mt-32 mb-18">
             All Articles
           </h2>
           <ul>

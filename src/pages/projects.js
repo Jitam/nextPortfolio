@@ -11,8 +11,8 @@ const FramerImg = motion(Image);
 
 const FeaturedProject = ({ type, title, summary, img, github, link }) => {
   return (
-    <article className="w-full relative flex items-center justify-between rounded-3xl border border-solid border-dark bg-light shadow-2xl p-12">
-      <div className="absolute top-0 -right-3 -z-10 w-[104%] h-[103%] rounded-[2rem] bg-dark" />
+    <article className="w-full relative flex items-center justify-between rounded-3xl border border-solid border-dark bg-light shadow-2xl p-12 dark:bg-dark dark:border-light">
+      <div className="absolute top-0 -right-3 -z-10 w-[104%] h-[103%] rounded-[2rem] bg-dark dark:bg-light" />
       <Link
         className="w-1/2 cursor-pointer overflow-hidden rounded-lg"
         href={link}
@@ -27,21 +27,29 @@ const FeaturedProject = ({ type, title, summary, img, github, link }) => {
         />
       </Link>
       <div className="w-1/2 flex flex-col items-start justify-between pl-6">
-        <span className="text-primary font-medium text-xl">{type}</span>
+        <span className="text-primary dark:text-primaryDark font-medium text-xl">
+          {type}
+        </span>
         <Link
           href={link}
           target="_blank"
           className="hover:cursor-pointer hover:underline hover:underline-offset-2"
         >
-          <h2 className="my-2 w-full text-left text-4xl font-bold">{title}</h2>
+          <h2 className="my-2 w-full text-left text-4xl dark:text-light font-bold">
+            {title}
+          </h2>
         </Link>
-        <p className="my-2 font-medium text-dark">{summary}</p>
+        <p className="my-2 font-medium text-dark dark:text-light">{summary}</p>
         <div className="mt-2 flex items-center">
-          <Link href={github} className="w-10" target="_blank">
+          <Link
+            href={github}
+            className="w-10 dark:bg-light rounded-full"
+            target="_blank"
+          >
             <GithubIcon />
           </Link>
           <Link
-            className="bg-dark border-2 border-light ml-4 rounded-lg text-light p-2 px-6 text-lg font-semibold hover:cursor-pointer hover:bg-light hover:text-dark hover:border-dark"
+            className="bg-dark border-2 border-light ml-4 rounded-lg text-light p-2 px-6 text-lg font-semibold hover:cursor-pointer hover:bg-light hover:text-dark hover:border-dark dark:bg-light dark:border-dark dark:text-dark hover:dark:bg-dark hover:dark:text-light hover:dark:border-light"
             href={link}
             target="_blank"
           >
@@ -55,8 +63,8 @@ const FeaturedProject = ({ type, title, summary, img, github, link }) => {
 
 const CustomProject = ({ title, type, img, link, github }) => {
   return (
-    <article className="w-full flex flex-col items-center justify-center rounded-2xl border border-solid border-dark bg-light p-6 relative my-12 shadow-2xl">
-      <div className="absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-dark" />
+    <article className="w-full flex flex-col items-center justify-center rounded-2xl border border-solid border-dark bg-light p-6 relative my-12 shadow-2xl dark:border-light dark:bg-dark">
+      <div className="absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-dark dark:bg-light" />
       <Link
         className="w-full cursor-pointer overflow-hidden rounded-lg"
         href={link}
@@ -71,23 +79,31 @@ const CustomProject = ({ title, type, img, link, github }) => {
         />
       </Link>
       <div className="w-full flex flex-col items-start justify-between mt-4">
-        <span className="text-primary font-medium text-xl">{type}</span>
+        <span className="text-primary dark:text-primaryDark font-medium text-xl">
+          {type}
+        </span>
         <Link
           href={link}
           target="_blank"
           className="hover:cursor-pointer hover:underline hover:underline-offset-2"
         >
-          <h2 className="my-2 w-full text-left text-3xl font-bold">{title}</h2>
+          <h2 className="my-2 w-full text-left dark:text-light text-3xl font-bold">
+            {title}
+          </h2>
         </Link>
         <div className="w-full justify-between mt-2 flex items-center">
           <Link
             href={github}
-            className="w-8 hover:underline hover:underline-offset-2"
+            className="w-8 hover:underline hover:underline-offset-2 dark:bg-light dark:rounded-full"
             target="_blank"
           >
             <GithubIcon />
           </Link>
-          <Link className="text-lg font-semibold " href={link} target="_blank">
+          <Link
+            className="text-lg font-semibold dark:text-light"
+            href={link}
+            target="_blank"
+          >
             View
           </Link>
         </div>

@@ -15,7 +15,7 @@ export default function Home() {
         <title>Jitender Pondicherry</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="flex items-center text-dark w-full min-h-screen">
+      <main className="flex items-center text-dark w-full min-h-screen dark:text-light">
         <Layout className="pt-0">
           <div className="flex items-center justify-center w-full xs:flex-col-reverse">
             <div className="w-1/2">
@@ -42,14 +42,14 @@ export default function Home() {
                   href="/dummy.pdf"
                   target="_blank"
                   download={true}
-                  className="flex items-center bg-dark text-light p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark border-2 border-solid border-light hover:border-dark mx-4"
+                  className="flex items-center bg-dark text-light p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark border-2 border-solid border-light hover:border-dark mx-4 dark:bg-light dark:text-dark hover:dark:bg-dark hover:dark:text-light hover:dark:border-light"
                 >
                   Resume
                   <LinkArrow className={"w-6 ml-1"} />
                 </Link>
                 <Link
                   href="mailto:jitender.sridhar@gmail.com"
-                  className="text-dark underline font-medium text-lg capitalize"
+                  className="text-dark dark:text-light underline font-medium text-lg capitalize"
                   target="_blank"
                 >
                   Contact
