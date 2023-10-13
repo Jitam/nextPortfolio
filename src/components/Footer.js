@@ -3,8 +3,8 @@ import Layout from "./Layout";
 
 const Footer = () => {
   return (
-    <footer className="w-full border-t-2 border-dark dark:border-light dark:text-light border-solid font-medium text-lg">
-      <Layout className="p-8 flex items-center justify-between">
+    <footer className="w-full border-t-2 border-dark dark:border-light dark:text-light border-solid font-medium text-lg sm:text-base">
+      <Layout className="p-8 lg:!p-8  xl:!p-8 flex items-center justify-between lg:flex-col">
         <span>{new Date().getFullYear()} &copy; All Rights Reserved</span>
         <div>
           <Link className="flex items-center" href={"/"}>
