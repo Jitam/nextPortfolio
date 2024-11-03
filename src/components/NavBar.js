@@ -20,9 +20,8 @@ const CustomLink = ({ href, title, className = "" }) => {
     <Link href={href} className={`${className} mx-2 relative group`}>
       {title}
       <span
-        className={`h-[1px] inline-block bg-dark absolute left-0 -bottom-0.5 group-hover:w-full transition-[width] ease duration-300 ${
-          router.asPath === href ? "w-full" : "w-0"
-        } dark:bg-light`}
+        className={`h-[1px] inline-block bg-dark absolute left-0 -bottom-0.5 group-hover:w-full transition-[width] ease duration-300 ${router.asPath === href ? "w-full" : "w-0"
+          } dark:bg-light`}
       ></span>
     </Link>
   );
@@ -42,9 +41,8 @@ const MobileLink = ({ href, title, className = "", toggle }) => {
     >
       {title}
       <span
-        className={`h-[1px] inline-block bg-light dark:bg-dark absolute left-0 -bottom-0.5 group-hover:w-full transition-[width] ease duration-300 ${
-          router.asPath === href ? "w-full" : "w-0"
-        } dark:bg-dark`}
+        className={`h-[1px] inline-block bg-light dark:bg-dark absolute left-0 -bottom-0.5 group-hover:w-full transition-[width] ease duration-300 ${router.asPath === href ? "w-full" : "w-0"
+          } dark:bg-dark`}
       ></span>
     </button>
   );
@@ -65,31 +63,28 @@ const NavBar = () => {
         onClick={handleMenu}
       >
         <span
-          className={`bg-dark dark:bg-light transition-all duration-300 ease-out block h-0.5 w-6 rounded-sm  ${
-            isOpen ? "rotate-45 translate-y-1" : "-translate-y-0.5"
-          }`}
+          className={`bg-dark dark:bg-light transition-all duration-300 ease-out block h-0.5 w-6 rounded-sm  ${isOpen ? "rotate-45 translate-y-1" : "-translate-y-0.5"
+            }`}
         ></span>
         <span
-          className={`bg-dark dark:bg-light transition-all duration-300 ease-out block h-0.5 w-6 rounded-sm my-0.5 ${
-            isOpen ? "opacity-0" : "opacity-100"
-          }`}
+          className={`bg-dark dark:bg-light transition-all duration-300 ease-out block h-0.5 w-6 rounded-sm my-0.5 ${isOpen ? "opacity-0" : "opacity-100"
+            }`}
         ></span>
         <span
-          className={`bg-dark dark:bg-light transition-all duration-300 ease-out block h-0.5 w-6 rounded-sm  ${
-            isOpen ? "-rotate-45 -translate-y-1" : "translate-y-0.5"
-          }`}
+          className={`bg-dark dark:bg-light transition-all duration-300 ease-out block h-0.5 w-6 rounded-sm  ${isOpen ? "-rotate-45 -translate-y-1" : "translate-y-0.5"
+            }`}
         ></span>
       </button>
       <div className="w-full flex justify-between items-center lg:hidden">
         <nav>
           <CustomLink href={"/"} title={"Home"} />
           <CustomLink href={"/about"} title={"About"} />
-          <CustomLink href={"/projects"} title={"Projects"} />
-          <CustomLink href={"/articles"} title={"Articles"} />
+          <CustomLink href={"/#"} title={"Projects"} />
+          {/* <CustomLink href={"/articles"} title={"Articles"} /> */}
         </nav>
 
         <nav className="flex items-center justify-center flex-wrap">
-          <motion.a
+          {/* <motion.a
             href={"/"}
             target="_blank"
             className="w-6 mx-3"
@@ -97,9 +92,9 @@ const NavBar = () => {
             whileTap={{ scale: 0.9 }}
           >
             <TwitterIcon />
-          </motion.a>
+          </motion.a> */}
           <motion.a
-            href={"/"}
+            href={"https://github.com/Jitam"}
             target="_blank"
             className="w-6 mx-3"
             whileHover={{ y: -2 }}
@@ -107,7 +102,7 @@ const NavBar = () => {
           >
             <GithubIcon />
           </motion.a>
-          <motion.a
+          {/* <motion.a
             href={"/"}
             target="_blank"
             className="w-6 mx-3"
@@ -115,9 +110,9 @@ const NavBar = () => {
             whileTap={{ scale: 0.9 }}
           >
             <DribbbleIcon />
-          </motion.a>
+          </motion.a> */}
           <motion.a
-            href={"/"}
+            href={"https://www.linkedin.com/in/jitender-pondicherry-884bb5189/"}
             target="_blank"
             className="w-6 mx-3"
             whileHover={{ y: -2 }}
@@ -125,7 +120,7 @@ const NavBar = () => {
           >
             <LinkedInIcon />
           </motion.a>
-          <motion.a
+          {/* <motion.a
             href={"/"}
             target="_blank"
             className="w-6 mx-3"
@@ -133,13 +128,12 @@ const NavBar = () => {
             whileTap={{ scale: 0.9 }}
           >
             <PinterestIcon />
-          </motion.a>
+          </motion.a> */}
 
           <button
             onClick={() => setMode(mode === "light" ? "dark" : "light")}
-            className={`ml-3 flex items-center justify-center rounded-full p-1 ${
-              mode === "light" ? "bg-dark text-light" : "bg-light text-dark"
-            }`}
+            className={`ml-3 flex items-center justify-center rounded-full p-1 ${mode === "light" ? "bg-dark text-light" : "bg-light text-dark"
+              }`}
           >
             {mode === "dark" ? (
               <SunIcon className={"fill-dark"} />
@@ -159,19 +153,19 @@ const NavBar = () => {
             <MobileLink href={"/"} title={"Home"} toggle={handleMenu} />
             <MobileLink href={"/about"} title={"About"} toggle={handleMenu} />
             <MobileLink
-              href={"/projects"}
+              href={"/#"}
               title={"Projects"}
               toggle={handleMenu}
             />
-            <MobileLink
+            {/* <MobileLink
               href={"/articles"}
               title={"Articles"}
               toggle={handleMenu}
-            />
+            /> */}
           </nav>
 
           <nav className="flex items-center justify-center flex-wrap mt-3">
-            <motion.a
+            {/* <motion.a
               href={"/"}
               target="_blank"
               className="w-6 mx-3 sm:mx-2"
@@ -179,9 +173,9 @@ const NavBar = () => {
               whileTap={{ scale: 0.9 }}
             >
               <TwitterIcon />
-            </motion.a>
+            </motion.a> */}
             <motion.a
-              href={"/"}
+              href={"https://github.com/Jitam"}
               target="_blank"
               className="w-6 mx-3  sm:mx-2 bg-light dark:bg-dark rounded-full"
               whileHover={{ y: -2 }}
@@ -189,7 +183,7 @@ const NavBar = () => {
             >
               <GithubIcon />
             </motion.a>
-            <motion.a
+            {/* <motion.a
               href={"/"}
               target="_blank"
               className="w-6 mx-3  sm:mx-2"
@@ -197,9 +191,9 @@ const NavBar = () => {
               whileTap={{ scale: 0.9 }}
             >
               <DribbbleIcon />
-            </motion.a>
+            </motion.a> */}
             <motion.a
-              href={"/"}
+              href={"https://www.linkedin.com/in/jitender-pondicherry-884bb5189/"}
               target="_blank"
               className="w-6 mx-3  sm:mx-2"
               whileHover={{ y: -2 }}
@@ -207,7 +201,7 @@ const NavBar = () => {
             >
               <LinkedInIcon />
             </motion.a>
-            <motion.a
+            {/* <motion.a
               href={"/"}
               target="_blank"
               className="w-6 mx-3  sm:mx-2"
@@ -215,13 +209,12 @@ const NavBar = () => {
               whileTap={{ scale: 0.9 }}
             >
               <PinterestIcon />
-            </motion.a>
+            </motion.a> */}
 
             <button
               onClick={() => setMode(mode === "light" ? "dark" : "light")}
-              className={`ml-3  sm:mx-2 flex items-center justify-center rounded-full p-1 ${
-                mode === "dark" ? "bg-dark text-light" : "bg-light text-dark"
-              }`}
+              className={`ml-3  sm:mx-2 flex items-center justify-center rounded-full p-1 ${mode === "dark" ? "bg-dark text-light" : "bg-light text-dark"
+                }`}
             >
               {mode === "dark" ? (
                 <SunIcon className={"fill-dark"} />

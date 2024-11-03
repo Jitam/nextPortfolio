@@ -55,28 +55,27 @@ const Experience = () => {
         <ul className="w-full flex flex-col ml-4 items-start justify-between xs:ml-2">
           <Details
             position={"Software Engineer"}
-            company={"Google"}
-            link={"http://www.google.com"}
-            time={"2022-Present"}
-            address={"Mountain View, CA"}
-            work={`Worked on a team responsible for developing new features for Google's search engine, including improving the accuracy and relevance of search results and developing new tools for data analysis and visualization.`}
+            company={"Blockmatrix Interactive Solutions"}
+            link={"http://www.blocmatrix.com"}
+            time={"Feb 2019-Present"}
+            address={"Hyderabad, India"}
+            work={`Worked on a team responsible for developing online games, where game providers can host their games and the client will be responsible for providing access to user to play their games and make payments based on his platform.`}
           />
           <Details
-            position={"Intern"}
-            company={"Facebook"}
-            link={"http://www.facebook.com"}
-            time={"Summer 2021"}
-            address={"Mountain View, CA"}
-            work={`Worked on a team responsible for developing a new mobile app feature that allowed users to create and share short-form video content, including designing and implementing a new user interface and developing the backend infrastructure to support the feature.`}
+            position={"Freelancing"}
+            company={""}
+            // link={""}
+            time={"Jan 2018 - Jan 2019"}
+            address={"Hyderabad, India"}
+            work={`Worked on 2-3 projects based on HTML, JS and CSS. Mostly included as personal porfolios of people who are working in design studios.`}
           />
           <Details
-            position={"Software Developer"}
-            company={"Amazon"}
-            link={"http://www.amazon.com"}
-            time={"2020-2021"}
-            address={"Seattle, WA"}
-            work={`Worked on a team responsible for developing Amazon's mobile app, including implementing new features such 
-            as product recommendations and user reviews, and optimizing the app's performance and reliability.`}
+            position={"Production Engineer"}
+            company={"VS Enterprises"}
+            // link={"http://www.amazon.com"}
+            time={"Feb 2012- Nov 2017"}
+            address={"Hyderabad, India"}
+            work={`Was involved in production and service of Transformers. Had to be update with demand and supply`}
           />
         </ul>
       </div>

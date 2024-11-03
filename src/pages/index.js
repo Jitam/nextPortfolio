@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Layout from "@/components/Layout";
 import Image from "next/image";
-import profilePic from "../../public/images/profile/developer-pic-1.png";
+import profilePic from "../../public/images/profile/profile6.png";
 import AnimatedText from "@/components/AnimatedText";
 import Link from "next/link";
 import { LinkArrow } from "@/components/Icons";
@@ -24,9 +24,9 @@ export default function Home() {
               <Image
                 src={profilePic}
                 alt="Jitender Pondicherry"
-                className="w-full h-auto lg:hidden md:inline-block sm:inline-block xs:inline-block md:w-full"
+                className="w-[50%] h-auto lg:hidden md:inline-block sm:inline-block xs:inline-block md:w-full"
                 priority={false}
-                sizes="(max-width:768px) 100vw, (max-width:1200px) 50vw, 50vw"
+                sizes="(max-width:768px) 50vw, (max-width:1200px) 25vw, 25vw"
               />
             </div>
             <div className="w-1/2 flex flex-col items-center self-center lg:w-full lg:text-center">
@@ -35,14 +35,14 @@ export default function Home() {
                 className="!text-6xl !text-left xl:!text-5xl lg:!text-center lg:!text-6xl md:!text-4xl sm:!text-3xl"
               />
               <p className="my-4 text-base font-medium md:text-sm sm:text-xs">
-                As a skilled full-stack developer, I am dedicated to turning
-                ideas into innovative web applications. Explore my latest
-                projects and articles, showcasing my expertise in React.js and
+                As a skilled frontend developer, I am dedicated to turning
+                ideas into innovative web/mobile applications. Explore my latest
+                projects and articles, showcasing my expertise in React.js, Next.js, React-Native and
                 web development.
               </p>
               <div className="flex items-center self-start mt-2 lg:self-center">
                 <Link
-                  href="/dummy.pdf"
+                  href="/resume.pdf"
                   target="_blank"
                   download={true}
                   className="flex items-center bg-dark text-light p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark border-2 border-solid border-light hover:border-dark mx-4 dark:bg-light dark:text-dark hover:dark:bg-dark hover:dark:text-light hover:dark:border-light md:p-2 md:px-4 md:text-base"
