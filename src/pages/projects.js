@@ -4,7 +4,9 @@ import Layout from "@/components/Layout";
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
-import featuredProject from "../../public/images/projects/crypto-screener-cover-image.jpg";
+import featuredProject from "../../public/images/projects/xpandrAi/xpandrai.png";
+import featuredProject1 from "../../public/images/projects/jackpotvilla/jackpotvilla.png";
+import featuredProject2 from "../../public/images/projects/zifipay/img1.jpeg";
 import { motion } from "framer-motion";
 import TransitionEffect from "@/components/TransitionEffect";
 
@@ -132,33 +134,33 @@ const projects = () => {
           <div className="grid grid-cols-12 gap-24 gap-y-16 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0">
             <div className="col-span-12">
               <FeaturedProject
-                title={"Crypto Screener Application"}
+                title={"XpandrAi"}
                 type={"Featured"}
                 img={featuredProject}
-                summary={`A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your local currency.`}
-                link={"/"}
+                summary={`A comprehensive solution designed to streamline and simplify your social media marketing endeavors.`}
+                link={"https://www.xpandrai.com"}
                 github={"/"}
               />
             </div>
             <div className="col-span-6 sm:col-span-12">
               <CustomProject
-                title={"Crypto Screener Application"}
+                title={"Online gaming Aggregator"}
                 type={"Featured"}
-                img={featuredProject}
-                link={"/"}
+                img={featuredProject1}
+                link={"https://www.jackpotvilla.com/"}
                 github={"/"}
               />
             </div>
             <div className="col-span-6 sm:col-span-12">
               <CustomProject
-                title={"Crypto Screener Application"}
+                title={"Crypto Wallet App"}
                 type={"Featured"}
-                img={featuredProject}
+                img={featuredProject2}
                 link={"/"}
                 github={"/"}
               />
             </div>
-            <div className="col-span-12">
+            {/* <div className="col-span-12">
               <FeaturedProject
                 title={"Crypto Screener Application"}
                 type={"Featured"}
@@ -167,8 +169,8 @@ const projects = () => {
                 link={"/"}
                 github={"/"}
               />
-            </div>
-            <div className="col-span-6 sm:col-span-12">
+            </div> */}
+            {/* <div className="col-span-6 sm:col-span-12">
               <CustomProject
                 title={"Crypto Screener Application"}
                 type={"Featured"}
@@ -185,7 +187,7 @@ const projects = () => {
                 link={"/"}
                 github={"/"}
               />
-            </div>
+            </div> */}
           </div>
         </Layout>
       </main>
