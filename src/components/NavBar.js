@@ -2,11 +2,8 @@ import Link from "next/link";
 import Logo from "./Logo";
 import { useRouter } from "next/router";
 import {
-  TwitterIcon,
-  DribbbleIcon,
   GithubIcon,
   LinkedInIcon,
-  PinterestIcon,
   SunIcon,
   MoonIcon,
 } from "./Icons";
@@ -79,7 +76,7 @@ const NavBar = () => {
         <nav>
           <CustomLink href={"/"} title={"Home"} />
           <CustomLink href={"/about"} title={"About"} />
-          <CustomLink href={"/#"} title={"Projects"} />
+          <CustomLink href={"/projects"} title={"Projects"} />
           {/* <CustomLink href={"/articles"} title={"Articles"} /> */}
         </nav>
 
@@ -153,7 +150,7 @@ const NavBar = () => {
             <MobileLink href={"/"} title={"Home"} toggle={handleMenu} />
             <MobileLink href={"/about"} title={"About"} toggle={handleMenu} />
             <MobileLink
-              href={"/#"}
+              href={"/projects"}
               title={"Projects"}
               toggle={handleMenu}
             />

@@ -1,10 +1,13 @@
+"use client"
+
 import AnimatedText from "@/components/AnimatedText";
 import Layout from "@/components/Layout";
 import Head from "next/head";
 import Link from "next/link";
-import featuredProject from "../../public/images/articles/pagination-component-in-reactjs.jpg";
-import featuredProject1 from "../../public/images/articles/loading_screen.jpg";
 import Image from "next/image";
+import featuredProject from "../../public/images/articles/pagination-component-in-reactjs.jpg";
+import featuredRamProject from "../../public/images/articles/loading_screen.jpg";
+
 import { motion, useMotionValue } from "framer-motion";
 import { useRef } from "react";
 import TransitionEffect from "@/components/TransitionEffect";
@@ -129,7 +132,7 @@ Follow this step-by-step guide to integrate Pagination component in your ReactJS
               summary={`Learn how to build a custom pagination component in ReactJS from scratch. 
 Follow this step-by-step guide to integrate Pagination component in your ReactJS project.`}
               time={"9 min read"}
-              img={featuredProject1}
+              img={featuredRamProject}
               link={"/"}
             />
           </ul>
@@ -142,7 +145,7 @@ Follow this step-by-step guide to integrate Pagination component in your ReactJS
                 "Form Validation In Reactjs: Build A Reusable Custom Hook For Inputs And Error Handling"
               }
               date={"03 October 2023"}
-              img={featuredProject1}
+              img={featuredRamProject}
               link={"/"}
             />
             <Article
@@ -150,7 +153,7 @@ Follow this step-by-step guide to integrate Pagination component in your ReactJS
                 "Form Validation In Reactjs: Build A Reusable Custom Hook For Inputs And Error Handling"
               }
               date={"03 October 2023"}
-              img={featuredProject1}
+              img={featuredRamProject}
               link={"/"}
             />
             <Article
@@ -158,7 +161,7 @@ Follow this step-by-step guide to integrate Pagination component in your ReactJS
                 "Form Validation In Reactjs: Build A Reusable Custom Hook For Inputs And Error Handling"
               }
               date={"03 October 2023"}
-              img={featuredProject1}
+              img={featuredRamProject}
               link={"/"}
             />
             <Article
@@ -166,7 +169,7 @@ Follow this step-by-step guide to integrate Pagination component in your ReactJS
                 "Form Validation In Reactjs: Build A Reusable Custom Hook For Inputs And Error Handling"
               }
               date={"03 October 2023"}
-              img={featuredProject1}
+              img={featuredRamProject}
               link={"/"}
             />
             <Article
@@ -174,7 +177,7 @@ Follow this step-by-step guide to integrate Pagination component in your ReactJS
                 "Form Validation In Reactjs: Build A Reusable Custom Hook For Inputs And Error Handling"
               }
               date={"03 October 2023"}
-              img={featuredProject1}
+              img={featuredRamProject}
               link={"/"}
             />
             <Article
@@ -182,7 +185,7 @@ Follow this step-by-step guide to integrate Pagination component in your ReactJS
                 "Form Validation In Reactjs: Build A Reusable Custom Hook For Inputs And Error Handling"
               }
               date={"03 October 2023"}
-              img={featuredProject1}
+              img={featuredRamProject}
               link={"/"}
             />
             <Article
@@ -190,7 +193,7 @@ Follow this step-by-step guide to integrate Pagination component in your ReactJS
                 "Form Validation In Reactjs: Build A Reusable Custom Hook For Inputs And Error Handling"
               }
               date={"03 October 2023"}
-              img={featuredProject1}
+              img={featuredRamProject}
               link={"/"}
             />
           </ul>
