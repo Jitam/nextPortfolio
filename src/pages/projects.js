@@ -10,6 +10,7 @@ import featuredProject2 from "../../public/images/projects/zifipay/img1.jpeg";
 import { motion } from "framer-motion";
 import TransitionEffect from "@/components/TransitionEffect";
 
+
 const FramerImg = motion(Image);
 
 const FeaturedProject = ({ type, title, summary, img, github, link }) => {
