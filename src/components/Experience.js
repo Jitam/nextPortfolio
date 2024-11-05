@@ -59,7 +59,7 @@ const Experience = () => {
             link={"http://www.blocmatrix.com"}
             time={"Feb 2019-Present"}
             address={"Hyderabad, India"}
-            work={`Worked on a team responsible for developing online games, where game providers can host their games and the client will be responsible for providing access to user to play their games and make payments based on his platform.`}
+            work={`Working on a team responsible for developing online games, where game providers can host their games and the client will be responsible for providing access to user to play their games and make payments based on his platform.`}
           />
           <Details
             position={"Freelancing"}
