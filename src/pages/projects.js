@@ -7,6 +7,8 @@ import Link from "next/link";
 import featuredProject from "../../public/images/projects/xpandrAi/xpandrai.png";
 import featuredProject1 from "../../public/images/projects/jackpotvilla/jackpotvilla.png";
 import featuredProject2 from "../../public/images/projects/zifipay/img1.png";
+import featuredProject3 from "../../public/images/projects/magical/img1.png";
+import featuredProject4 from "../../public/images/projects/anitra/img1.png";
 import { motion } from "framer-motion";
 import TransitionEffect from "@/components/TransitionEffect";
 
@@ -142,12 +144,20 @@ const projects = () => {
                 github={"/"}
               />
             </div>
-            <div className="col-span-6 sm:col-span-12">
+
+            <div className="col-span-6 flex flex-col items-center justify-evenly sm:col-span-12">
               <CustomProject
-                title={"Online gaming Aggregator"}
+                title={"Jackpotvilla"}
                 type={"Featured"}
                 img={featuredProject1}
                 link={"https://www.jackpotvilla.com/"}
+                github={"/"}
+              />
+              <CustomProject
+                title={"Magical Casino"}
+                type={"Featured"}
+                img={featuredProject3}
+                link={"https://magicalcasino.co/"}
                 github={"/"}
               />
             </div>
@@ -157,6 +167,16 @@ const projects = () => {
                 type={"Featured"}
                 img={featuredProject2}
                 link={"/"}
+                github={"/"}
+              />
+            </div>
+            <div className="col-span-12">
+              <FeaturedProject
+                title={"Anitra"}
+                type={"Featured"}
+                img={featuredProject4}
+                summary={`Online gaming Aggregator`}
+                link={"https://anitra.co/"}
                 github={"/"}
               />
             </div>
