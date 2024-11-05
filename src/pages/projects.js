@@ -6,7 +6,7 @@ import Image from "next/image";
 import Link from "next/link";
 import featuredProject from "../../public/images/projects/xpandrAi/xpandrai.png";
 import featuredProject1 from "../../public/images/projects/jackpotvilla/jackpotvilla.png";
-import featuredProject2 from "../../public/images/projects/zifipay/img1.jpeg";
+import featuredProject2 from "../../public/images/projects/zifipay/img1.png";
 import { motion } from "framer-motion";
 import TransitionEffect from "@/components/TransitionEffect";
 
