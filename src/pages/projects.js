@@ -133,7 +133,7 @@ const projects = () => {
             text={"Imagination Trumps Knowledge!"}
             className="mb-16 lg:!text-7xl sm:mb-8 sm:!text-6xl xs:!text-4xl"
           />
-          <div className="grid grid-cols-12 gap-24 gap-y-16 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0">
+          <div className="grid grid-cols-12 gap-24 gap-y-16 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-6 sm:gap-x-0">
             <div className="col-span-12">
               <FeaturedProject
                 title={"XpandrAi"}
@@ -145,7 +145,7 @@ const projects = () => {
               />
             </div>
 
-            <div className="col-span-6 flex flex-col items-center justify-evenly sm:col-span-12">
+            <div className="col-span-6 flex flex-col sm:gap-2 items-center justify-evenly sm:col-span-12">
               <CustomProject
                 title={"Jackpotvilla"}
                 type={"Featured"}
@@ -175,7 +175,7 @@ const projects = () => {
                 title={"Anitra"}
                 type={"Featured"}
                 img={featuredProject4}
-                summary={`Online gaming Aggregator`}
+                summary={`Anitra assists farmers in the monetization of animals at doorstep, providing ease and best value for livestock. Anitra brings best practices in Livestock Maintenance, Transport, and Logistics increasing farmers profits.`}
                 link={"https://anitra.co/"}
                 github={"/"}
               />
