@@ -14,7 +14,7 @@ import TransitionEffect from "@/components/TransitionEffect";
 
 const FramerImg = motion(Image);
 
-const FeaturedProject = ({ type, title, summary, img, github, link }) => {
+const FeaturedProject = ({ type, title, summary, img, github, link, badge }) => {
   return (
     <article className="w-full relative flex items-center justify-between rounded-3xl rounded-br-xl border border-solid border-dark bg-light shadow-2xl p-12 dark:bg-dark dark:border-light lg:flex-col lg:p-8 xs:rounded-2xl xs-rounded-br-2xl xs:p-4">
       <div className="absolute top-0 -right-3 -z-10 w-[104%] h-[103%] rounded-[2rem] bg-dark dark:bg-light" />
@@ -44,10 +44,12 @@ const FeaturedProject = ({ type, title, summary, img, github, link }) => {
           <h2 className="my-2 w-full text-left text-4xl dark:text-light font-bold sm:text-sm">
             {title}
           </h2>
+
         </Link>
         <p className="my-2 font-medium text-dark dark:text-light sm:text-sm">
           {summary}
         </p>
+        <span class="inline-flex items-center rounded-md bg-red-50 px-2 py-1 text-xs font-medium text-red-700 ring-1 ring-inset ring-red-600/10">{badge}</span>
         <div className="mt-2 flex items-center">
           <Link
             href={github}
@@ -69,7 +71,7 @@ const FeaturedProject = ({ type, title, summary, img, github, link }) => {
   );
 };
 
-const CustomProject = ({ title, type, img, link, github }) => {
+const CustomProject = ({ title, type, img, link, github, badge }) => {
   return (
     <article className="w-full flex flex-col items-center justify-center rounded-2xl border border-solid border-dark bg-light p-6 relative my-12 shadow-2xl dark:border-light dark:bg-dark xs:px-4">
       <div className="absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-dark dark:bg-light" />
@@ -98,6 +100,7 @@ const CustomProject = ({ title, type, img, link, github }) => {
           <h2 className="my-2 w-full text-left dark:text-light text-3xl font-bold lg:text-2xl">
             {title}
           </h2>
+          <span class="inline-flex items-center rounded-md bg-red-50 px-2 py-1 text-xs font-medium text-red-700 ring-1 ring-inset ring-red-600/10">{badge}</span>
         </Link>
         <div className="w-full justify-between mt-2 flex items-center">
           <Link
@@ -142,6 +145,7 @@ const projects = () => {
                 summary={`A comprehensive solution designed to streamline and simplify your social media marketing endeavors.`}
                 link={"https://www.xpandrai.com"}
                 github={"/"}
+                badge={"Nextjs"}
               />
             </div>
 
@@ -152,6 +156,7 @@ const projects = () => {
                 img={featuredProject1}
                 link={"https://www.jackpotvilla.com/"}
                 github={"/"}
+                badge={"Next.js"}
               />
               <CustomProject
                 title={"Magical Casino"}
@@ -159,6 +164,7 @@ const projects = () => {
                 img={featuredProject3}
                 link={"https://magicalcasino.co/"}
                 github={"/"}
+                badge={"HTML, PHP"}
               />
             </div>
             <div className="col-span-6 sm:col-span-12">
@@ -168,6 +174,7 @@ const projects = () => {
                 img={featuredProject2}
                 link={"/"}
                 github={"/"}
+                badge={"React-Native"}
               />
             </div>
             <div className="col-span-12">
@@ -178,6 +185,7 @@ const projects = () => {
                 summary={`Anitra assists farmers in the monetization of animals at doorstep, providing ease and best value for livestock. Anitra brings best practices in Livestock Maintenance, Transport, and Logistics increasing farmers profits.`}
                 link={"https://anitra.co/"}
                 github={"/"}
+                badge={"Bootstrap"}
               />
             </div>
             {/* <div className="col-span-12">
