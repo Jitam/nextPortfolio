@@ -157,7 +157,7 @@ const projects = () => {
       <main className="w-full mb-16 flex flex-col items-center justify-center">
         <Layout className="pt-16">
           <AnimatedText
-            text={"Some of my works are here"}
+            text={"My Projects"}
             className="mb-16 lg:!text-5xl sm:mb-8 sm:!text-4xl xs:!text-2xl"
           />
           <div className="grid grid-cols-12 gap-24 gap-y-16 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-6 sm:gap-x-0">
@@ -201,8 +201,8 @@ const projects = () => {
                 badge={"React-Native"}
               />
             </div>
-            <div className="col-span-12">
-              <FeaturedProject
+            <div className="col-span-6 sm:col-span-12">
+              <CustomProject
                 title={"Anitra"}
                 type={"Featured"}
                 img={featuredProject4}
@@ -212,13 +212,13 @@ const projects = () => {
                 badge={"Bootstrap"}
               />
             </div>
-            <div className="col-span-12 sm:col-span-12">
-              <FeaturedProject
+            <div className="col-span-6 sm:col-span-12">
+              <CustomProject
                 title={"AI Email Template Generator"}
                 type={"Featured"}
                 img={featuredProject5}
                 summary={`Streamline your email communication with our AI-powered email web app. Whether you're writing a quick response or composing a detailed message, our smart assistant helps you craft the perfect email in just a few clicks.`}
-                link={"/https://ai-editor-app.vercel.app/"}
+                link={"https://ai-editor-app.vercel.app/"}
                 github={"/"}
               />
             </div>
