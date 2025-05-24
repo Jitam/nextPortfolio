@@ -107,7 +107,7 @@ const CustomProject = ({ title, type, img, link, github, badge }) => {
       </Link>
       <div className="w-full flex flex-col items-start justify-between mt-4">
         <div className="flex flex-row items-center justify-between w-full">
-          <span className="text-primary dark:text-primaryDark font-medium text-xl">
+          <span className="text-primary dark:text-primaryDark font-medium text-md">
             {type}
           </span>
           <div className="bg-gray-100 hover:bg-gray-300 rounded-full p-2 border">
@@ -223,7 +223,7 @@ const projects = () => {
                 github={"/"}
               />
             </div>
-            <div className="col-span-12 sm:col-span-12">
+            <div className="col-span-6 sm:col-span-12">
               <CustomProject
                 title={"E-Commerce Frontend"}
                 type={"Under Development"}
