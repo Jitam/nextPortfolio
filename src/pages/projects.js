@@ -10,6 +10,7 @@ import featuredProject2 from "../../public/images/projects/zifipay/img1.png";
 import featuredProject3 from "../../public/images/projects/magical/img1.png";
 import featuredProject4 from "../../public/images/projects/anitra/img1.png";
 import featuredProject5 from "@/../public/images/projects/aiEmail/aiEmail.png";
+import featuredProject6 from "@/../public/images/projects/grabIt/grabIt.png";
 import { motion } from "framer-motion";
 import TransitionEffect from "@/components/TransitionEffect";
 import { LuMonitorSmartphone, LuSmartphone } from "react-icons/lu";
@@ -226,7 +227,7 @@ const projects = () => {
               <CustomProject
                 title={"E-Commerce Frontend"}
                 type={"Under Development"}
-                img={featuredProject5}
+                img={featuredProject6}
                 summary={``}
                 link={"https://grab-it-frontend-nine.vercel.app/"}
                 github={"/"}
