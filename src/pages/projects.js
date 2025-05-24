@@ -222,6 +222,16 @@ const projects = () => {
                 github={"/"}
               />
             </div>
+            <div className="col-span-12 sm:col-span-12">
+              <CustomProject
+                title={"E-Commerce Frontend"}
+                type={"Under Development"}
+                img={featuredProject5}
+                summary={``}
+                link={"https://grab-it-frontend-nine.vercel.app/"}
+                github={"/"}
+              />
+            </div>
             {/* <div className="col-span-6 sm:col-span-12">
               <CustomProject
                 title={"Crypto Screener Application"}
