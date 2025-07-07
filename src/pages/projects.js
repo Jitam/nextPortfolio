@@ -11,6 +11,7 @@ import featuredProject3 from "../../public/images/projects/magical/img1.png";
 import featuredProject4 from "../../public/images/projects/anitra/img1.png";
 import featuredProject5 from "@/../public/images/projects/aiEmail/aiEmail.png";
 import featuredProject6 from "@/../public/images/projects/grabIt/grabit.png";
+import featuredProject7 from "@/../public/images/projects/hyrophonic/hydrophonic_1.jpg";
 import { motion } from "framer-motion";
 import TransitionEffect from "@/components/TransitionEffect";
 import { LuMonitorSmartphone, LuSmartphone } from "react-icons/lu";
@@ -111,7 +112,7 @@ const CustomProject = ({ title, type, img, link, github, badge }) => {
             {type}
           </span>
           <div className="bg-gray-100 hover:bg-gray-300 rounded-full p-2 border">
-            {title === "Crypto Wallet App" ? (
+            {title === "Crypto Wallet App" || "HydroPhonic App" ? (
               <LuSmartphone size={24} />
             ) : (
               <LuMonitorSmartphone size={24} />
@@ -183,6 +184,8 @@ const projects = () => {
                 github={"/"}
                 badge={"Next.js"}
               />
+            </div>
+            <div className="col-span-6 sm:col-span-12">
               <CustomProject
                 title={"Magical Casino"}
                 type={"Featured"}
@@ -192,11 +195,22 @@ const projects = () => {
                 badge={"HTML, PHP"}
               />
             </div>
+
             <div className="col-span-6 sm:col-span-12">
               <CustomProject
                 title={"Crypto Wallet App"}
                 type={"Featured"}
                 img={featuredProject2}
+                link={"/"}
+                github={"/"}
+                badge={"React-Native"}
+              />
+            </div>
+            <div className="col-span-6 sm:col-span-12">
+              <CustomProject
+                title={"HydroPhonic App"}
+                type={"Featured"}
+                img={featuredProject7}
                 link={"/"}
                 github={"/"}
                 badge={"React-Native"}
@@ -226,13 +240,14 @@ const projects = () => {
             <div className="col-span-6 sm:col-span-12">
               <CustomProject
                 title={"E-Commerce Frontend"}
-                type={"Under Development"}
+                type={"MERN Stack"}
                 img={featuredProject6}
                 summary={``}
                 link={"https://grab-it-frontend-nine.vercel.app/"}
                 github={"/"}
               />
             </div>
+
             {/* <div className="col-span-6 sm:col-span-12">
               <CustomProject
                 title={"Crypto Screener Application"}
