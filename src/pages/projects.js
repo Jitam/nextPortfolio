@@ -235,16 +235,18 @@ const projects = () => {
                 summary={`Streamline your email communication with our AI-powered email web app. Whether you're writing a quick response or composing a detailed message, our smart assistant helps you craft the perfect email in just a few clicks.`}
                 link={"https://ai-editor-app.vercel.app/"}
                 github={"/"}
+                badge={"MERN Stack"}
               />
             </div>
             <div className="col-span-6 sm:col-span-12">
               <CustomProject
                 title={"E-Commerce Frontend"}
-                type={"MERN Stack"}
+                type={"Latest"}
                 img={featuredProject6}
                 summary={``}
                 link={"https://grab-it-frontend-nine.vercel.app/"}
                 github={"/"}
+                badge={"MERN Stack"}
               />
             </div>
 
