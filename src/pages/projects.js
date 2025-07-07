@@ -112,7 +112,7 @@ const CustomProject = ({ title, type, img, link, github, badge }) => {
             {type}
           </span>
           <div className="bg-gray-100 hover:bg-gray-300 rounded-full p-2 border">
-            {title === "Crypto Wallet App" || "HydroPhonic App" ? (
+            {title === "Crypto Wallet App" || title === "HydroPhonic App" ? (
               <LuSmartphone size={24} />
             ) : (
               <LuMonitorSmartphone size={24} />
