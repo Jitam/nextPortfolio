@@ -8,29 +8,29 @@ const Details = ({ position, company, link, time, address, work }) => {
   return (
     <li
       ref={ref}
-      className="my-8 last:mb-0 w-[60%] mx-auto flex flex-col items-center justify-between md:w-[80%]"
-    >
+      className="my-8 last:mb-0 w-[60%] mx-auto flex flex-col items-center justify-between md:w-[80%]">
       <LiIcon reference={ref} />
       <motion.div
         initial={{ y: 50 }}
         whileInView={{ y: 0 }}
-        transition={{ duration: 0.5, type: "spring" }}
-      >
+        transition={{ duration: 0.5, type: "spring" }}>
         <h3 className="capitalize text-2xl font-bold sm:text-xl xs:text-lg">
           {position}&nbsp;
-          {company === '' ? <a
-            className="text-primary dark:text-primaryDark capitalize"
-            href={link}
-            target="_blank"
-          >
-            {company}
-          </a> : <a
-            className="text-primary dark:text-primaryDark capitalize"
-            href={link}
-            target="_blank"
-          >
-            @{company}
-          </a>}
+          {company === "" ? (
+            <a
+              className="text-primary dark:text-primaryDark capitalize"
+              href={link}
+              target="_blank">
+              {company}
+            </a>
+          ) : (
+            <a
+              className="text-primary dark:text-primaryDark capitalize"
+              href={link}
+              target="_blank">
+              @{company}
+            </a>
+          )}
         </h3>
         <span className="text-dark/75 dark:text-light/75 capitalize font-medium xs:text-sm">
           {time} | {address}
@@ -65,26 +65,28 @@ const Experience = () => {
             link={"http://www.blocmatrix.com"}
             time={"Feb 2019-Present"}
             address={"Hyderabad, India"}
-            work={<ul className="list-disc list-inside">
-              <li>{`Working on a team responsible for developing online games, where game providers can host their games and the client will be responsible for providing access to user to play their games and make payments based on his platform.`}</li>
-              <li>{`Worked on mobile app for an crypto exchange servie, where they can buy,sell and transfer crypto currencies.`}</li>
-              {/* <li>{`Worked on AI driven social platform messaging service for players who play online games. `}</li> */}
-            </ul>}
+            work={
+              <ul className="list-disc list-inside">
+                <li>{`Working on a team responsible for developing online games, where game providers can host their games and the client will be responsible for providing access to user to play their games and make payments based on his platform.`}</li>
+                <li>{`Worked on mobile app for an crypto exchange servie, where they can buy,sell and transfer crypto currencies.`}</li>
+                {/* <li>{`Worked on AI driven social platform messaging service for players who play online games. `}</li> */}
+              </ul>
+            }
           />
           <Details
-            position={"Freelancing"}
-            company={""}
+            position={"Web Developer & Deisgner"}
+            company={"Even Studios"}
             // link={""}
-            time={"Jan 2018 - Jan 2019"}
+            time={"May 2016 - March 2018"}
             address={"Hyderabad, India"}
             work={`Worked on static websites mostly related to portfolios of designers and developers.`}
           />
           <Details
-            position={"Production Engineer"}
-            company={"VS Enterprises"}
-            time={"Feb 2012- Nov 2017"}
+            position={"Project Assistant"}
+            company={"National Geophysical Research Institute"}
+            time={"Aug 2010- July 2015"}
             address={"Hyderabad, India"}
-            work={`Was involved in production and service of Transformers. Had to be update with demand and supply`}
+            // work={`Was involved in production and service of Transformers. Had to be update with demand and supply`}
           />
         </ul>
       </div>
