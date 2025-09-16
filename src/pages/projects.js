@@ -12,6 +12,7 @@ import featuredProject4 from "../../public/images/projects/anitra/img1.png";
 import featuredProject5 from "@/../public/images/projects/aiEmail/aiEmail.png";
 import featuredProject6 from "@/../public/images/projects/grabIt/grabit.png";
 import featuredProject7 from "@/../public/images/projects/hyrophonic/hydrophonic_1.jpg";
+import featuredProject8 from "@/../public/images/projects/car-zing/car-zing.png";
 import { motion } from "framer-motion";
 import TransitionEffect from "@/components/TransitionEffect";
 import { LuMonitorSmartphone, LuSmartphone } from "react-icons/lu";
@@ -253,7 +254,7 @@ const projects = () => {
               <CustomProject
                 title={"CarZing"}
                 type={"Latest"}
-                img={featuredProject6}
+                img={featuredProject8}
                 summary={``}
                 link={"https://car-zing.vercel.app"}
                 github={"/"}
