@@ -249,6 +249,17 @@ const projects = () => {
                 badge={"MERN Stack"}
               />
             </div>
+            <div className="col-span-6 sm:col-span-12">
+              <CustomProject
+                title={"CarZing"}
+                type={"Latest"}
+                img={featuredProject6}
+                summary={``}
+                link={"https://car-zing.vercel.app"}
+                github={"/"}
+                badge={"MERN Stack"}
+              />
+            </div>
 
             {/* <div className="col-span-6 sm:col-span-12">
               <CustomProject
